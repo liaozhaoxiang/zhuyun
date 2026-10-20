@@ -11,6 +11,7 @@ from typing import Iterable, Iterator
 import httpx
 
 from app.config import settings
+from app.services.intent import has_domain_term
 
 SYSTEM_PROMPT = """你是建筑施工安全规范问答助手，服务对象是现场安全员。
 规则：
@@ -72,12 +73,38 @@ def _pick_key_sentences(text: str, n: int = 2) -> list[str]:
     return (with_num or sents)[:n]
 
 
-def _extractive(intent: str, question: str, parents: list[dict], cites: list[dict], top_score: float) -> tuple[str, float]:
+REFUSAL_TEXT = (
+    "当前知识库中没有与该问题直接对应的条文，我不做没有依据的回答。\n\n"
+    "我只覆盖建筑施工安全规范的三个方向：\n\n"
+    "1. **规范条文查询**：某项要求的具体数值，例如「脚手架连墙件间距是多少」\n"
+    "2. **隐患判定**：现场做法是否合规，例如「基坑边堆土 2 米算不算重大隐患」\n"
+    "3. **整改要求**：怎么改、多久闭环，例如「配电箱一闸多机怎么整改」\n\n"
+    "如果确实是在问施工安全，补充规范名称、构件名称或具体数值，我再检索一次。"
+)
+
+
+def is_refusal(question: str, parents: list[dict], cites: list[dict], top_score: float) -> bool:
+    """知识边界判定：拒绝回答"跨界问题"，但容忍"同域召回失败"。
+
+    精排分低于阈值有两种完全不同的情况，分数本身分不开：
+    - 跨领域瞎问（红烧肉、天气）：最高分 0~0.03，没有任何专业名词；
+    - 专业问题但没召回到（安全网破了没换）：最高分 0.08~0.27，句子里有明确专业名词。
+    前者必须拒答，否则会拼出一条"看起来很像"的错误条文；
+    后者是召回能力问题，拒答等于把检索缺陷藏起来，所以照答但明确标注匹配度偏低。
+    """
     if not parents or not cites:
-        return (
-            "现有知识库未收录与该问题直接对应的条文。\n\n建议补充关键词（如规范名称、构件名称、具体数值要求），或切换到对应分类后重试。",
-            0.2,
-        )
+        return True
+    if top_score >= settings.min_relevance:
+        return False
+    return not has_domain_term(question)
+
+
+WEAK_NOTE = "> ⚠️ 检索匹配度偏低（精排 {score:.2f}，阈值 {thr:.2f}），以下条文仅供参考，请核对规范原文。"
+
+
+def _extractive(intent: str, question: str, parents: list[dict], cites: list[dict], top_score: float) -> tuple[str, float]:
+    if is_refusal(question, parents, cites, top_score):
+        return REFUSAL_TEXT, 0.15
 
     first = cites[0]
     cite_no = f"[1]"
@@ -139,6 +166,10 @@ def _extractive(intent: str, question: str, parents: list[dict], cites: list[dic
     if len(cites) >= 3:
         conf = min(0.99, conf + 0.03)
     md = head + "\n\n" + "\n".join(body)
+    if top_score < settings.min_relevance:
+        # 同域但召回弱：照答，但把不确定性摆在最前面，并压住置信度
+        md = WEAK_NOTE.format(score=top_score, thr=settings.min_relevance) + "\n\n" + md
+        conf = min(conf, 0.45)
     md += "\n\n**引用条文**\n" + "\n".join(
         f"[{c['index']}] 《{c['std_name']}》{c['std_no']} 第 {c['clause_no']} 条 · {c['level']} · P{c['page']}" for c in cites[:5]
     )
@@ -185,6 +216,14 @@ def generate_stream(
     history: list[dict] | None = None,
 ) -> Iterator[dict]:
     """产出事件：token / citations / done。"""
+    # 知识边界拦在最前面：LLM 也一样，没有依据就不让它编
+    if is_refusal(question, parents, cites, top_score):
+        for i in range(0, len(REFUSAL_TEXT), 18):
+            yield {"type": "token", "data": REFUSAL_TEXT[i : i + 18]}
+        yield {"type": "citations", "data": []}
+        yield {"type": "done", "data": {"answer": REFUSAL_TEXT, "confidence": 0.15, "generator": "rule"}}
+        return
+
     if llm_available() and parents:
         buf = []
         try:

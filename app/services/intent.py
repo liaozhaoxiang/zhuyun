@@ -16,6 +16,23 @@ from app.services.lexical import tokenize
 
 LABELS = ["规范条文查询", "隐患判定", "整改要求", "系统闲聊"]
 
+# 专业名词：出现任意一个，就绝不该被判成「系统闲聊」
+DOMAIN_TERMS = (
+    "脚手架", "立杆", "剪刀撑", "连墙件", "扣件", "悬挑", "盘扣", "碗扣", "爬架", "吊篮", "安全网",
+    "模板", "支架", "高支模", "顶托", "拆模", "铝模", "爬模", "浇筑",
+    "基坑", "支护", "锚杆", "土钉", "降水", "冠梁", "排桩", "连续墙", "边坡", "开挖", "堆土", "堆载",
+    "临边", "洞口", "电梯井", "安全带", "安全帽", "高处", "攀登", "悬空", "操作平台", "交叉作业",
+    "用电", "配电", "漏电", "接零", "接地", "电缆", "开关箱", "一闸多机", "电焊机", "行灯", "TN-S",
+    "塔吊", "塔机", "起重机", "升降机", "物料提升机", "吊装", "吊索具", "履带吊", "汽车吊",
+    "梯子", "人字梯", "马凳", "登高",
+    "消防", "动火", "灭火器", "扬尘", "渣土", "宿舍", "食堂", "防火",
+    "隐患", "整改", "验收", "规范", "条文", "施工", "工程",
+)
+
+
+def has_domain_term(q: str) -> bool:
+    return any(t in q for t in DOMAIN_TERMS)
+
 # ---------------- 标注样本 ----------------
 SEED: dict[str, list[str]] = {
     "规范条文查询": [
@@ -177,7 +194,7 @@ class IntentClassifier:
             return "规范条文查询", 0.78, {"规范条文查询": 0.78}
         rules = [
             ("整改要求", r"怎么整改|如何整改|整改措施|整改期限|整改单|整改方案|整改流程|整改完|闭环|复查|复工|几天内改完|停工整改|整改通知"),
-            ("隐患判定", r"算不算|属于什么|什么等级|严重吗|怎么判|判定为|定性为|合规吗|可以吗|行不行|有问题吗|违法|违规"),
+            ("隐患判定", r"算不算|属于什么|什么等级|严重吗|怎么判|判定为|定性为|合规吗|可以吗|行不行|能不能|可不可以|有问题吗|违法|违规"),
         ]
         for lab, pat in rules:
             if re.search(pat, q_low):
@@ -186,7 +203,7 @@ class IntentClassifier:
             return "规范条文查询", 0.78, {"规范条文查询": 0.78}
         return "规范条文查询", 0.55, {"规范条文查询": 0.55}
 
-    def predict(self, query: str) -> dict:
+    def _predict_raw(self, query: str) -> dict:
         # 强规则优先：模板化问法（“算不算”“要满足什么条件”）用词稳定，规则比小模型可靠
         r_lab, r_conf, r_probs = self._rule(query)
         if r_conf >= 0.75:
@@ -202,6 +219,24 @@ class IntentClassifier:
             return {"intent": lab, "confidence": round(conf, 3), "scores": {k: round(v, 3) for k, v in probs.items()}, "backend": self.backend, "fallback": False}
         lab, conf, probs = self._rule(query)
         return {"intent": lab, "confidence": round(conf, 3), "scores": {k: round(v, 3) for k, v in probs.items()}, "backend": "rule", "fallback": True}
+
+    def predict(self, query: str) -> dict:
+        """预测意图，并做一次「专业词否决闲聊」的兜底。
+
+        小模型只学了词频，像「宿舍、办公用房的防火等级」这种没有疑问词、没有数值的短句，
+        会被它判成闲聊。但句子里出现了明确的专业名词，就不可能是闲聊。
+        """
+        res = self._predict_raw(query)
+        if res.get("intent") == "系统闲聊" and has_domain_term(query):
+            return {
+                **res,
+                "intent": "规范条文查询",
+                "confidence": 0.8,
+                "scores": {"规范条文查询": 0.8},
+                "fallback": True,
+                "domain_override": True,
+            }
+        return res
 
     def status(self) -> dict:
         return {

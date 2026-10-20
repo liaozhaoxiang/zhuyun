@@ -6,7 +6,7 @@ from typing import Iterator
 
 from app.config import settings
 from app.services.cache import get_cache
-from app.services.generator import build_citations, generate_stream, llm_available
+from app.services.generator import build_citations, generate_stream, is_refusal, llm_available
 from app.services.intent import get_intent_classifier
 from app.services.retriever import get_retriever
 from app.services.rewriter import backtrack_queries, decompose, hyde_text
@@ -105,6 +105,12 @@ class Pipeline:
             elif ev["type"] == "citations":
                 cites = ev["data"]
 
+        refused = is_refusal(question, parents, cites, top_score)
+        if refused:
+            # 跨界提问：引用与父块一并清空，避免前端展示误导性溯源
+            cites, parents = [], []
+        low_conf = (not refused) and top_score < settings.min_relevance
+
         result = {
             "question": question,
             "intent": intent_res,
@@ -114,10 +120,14 @@ class Pipeline:
             "confidence": conf,
             "citations": cites,
             "parents": parents,
+            "refused": refused,
+            "low_confidence": low_conf,
             "trace": {
                 "paths": traces,
                 "top_score": top_score,
                 "threshold": settings.min_relevance,
+                "refused": refused,
+                "low_confidence": low_conf,
                 "version": {
                     "embed": self.retriever.embedder.backend,
                     "rerank": self.retriever.reranker.backend,
@@ -219,8 +229,18 @@ class Pipeline:
                 gen = ev["data"]["generator"]
                 answer = ev["data"]["answer"]
 
+        refused = is_refusal(question, parents, cites, top_score)
+        if refused:
+            cites, parents = [], []
+        low_conf = (not refused) and top_score < settings.min_relevance
         latency = int((time.perf_counter() - t0) * 1000)
-        yield {"type": "stage", "stage": "generate", "data": {"state": "done", "label": "生成回答", "detail": f"{gen} · {latency}ms"}}
+        if refused:
+            detail = f"未命中知识边界，拒答 · {latency}ms"
+        elif low_conf:
+            detail = f"低置信度作答（{top_score:.2f} < {settings.min_relevance}） · {latency}ms"
+        else:
+            detail = f"{gen} · {latency}ms"
+        yield {"type": "stage", "stage": "generate", "data": {"state": "done", "label": "生成回答", "detail": detail}}
         yield {
             "type": "done",
             "data": {
@@ -232,7 +252,9 @@ class Pipeline:
                 "confidence": conf,
                 "citations": cites,
                 "parents": parents,
-                "trace": {"paths": all_traces, "top_score": top_score, "version": {"embed": self.retriever.embedder.backend, "rerank": self.retriever.reranker.backend, "vector": self.retriever.store.backend, "generator": gen}},
+                "refused": refused,
+                "low_confidence": low_conf,
+                "trace": {"paths": all_traces, "top_score": top_score, "threshold": settings.min_relevance, "refused": refused, "low_confidence": low_conf, "version": {"embed": self.retriever.embedder.backend, "rerank": self.retriever.reranker.backend, "vector": self.retriever.store.backend, "generator": gen}},
                 "latency_ms": latency,
                 "generator": gen,
             },
