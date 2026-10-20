@@ -1,0 +1,588 @@
+[
+ {
+  "doc_id": "GB504972019",
+  "std_no": "GB 50497-2019",
+  "std_name": "建筑基坑工程监测技术标准",
+  "category": "基坑工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2019-03-13",
+  "effective_date": "2019-10-01",
+  "status": "现行",
+  "pages": 108,
+  "scope": "适用于建筑基坑工程及周边环境的监测。",
+  "alias": [
+   "基坑监测标准",
+   "监测标准"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1202012",
+  "std_no": "JGJ 120-2012",
+  "std_name": "建筑基坑支护技术规程",
+  "category": "基坑工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2012-05-09",
+  "effective_date": "2012-10-01",
+  "status": "现行",
+  "pages": 132,
+  "scope": "适用于建筑基坑支护的设计、施工、监测及验收。",
+  "alias": [
+   "基坑支护规程",
+   "基坑规范"
+  ],
+  "clause_count": 23,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1802009",
+  "std_no": "JGJ 180-2009",
+  "std_name": "建筑施工土石方工程安全技术规范",
+  "category": "基坑工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2009-05-13",
+  "effective_date": "2009-12-01",
+  "status": "现行",
+  "pages": 108,
+  "scope": "适用于建筑施工现场土石方工程的施工安全技术管理。",
+  "alias": [
+   "土石方规范"
+  ],
+  "clause_count": 7,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ3112013",
+  "std_no": "JGJ 311-2013",
+  "std_name": "建筑深基坑工程施工安全技术规范",
+  "category": "基坑工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2013-11-08",
+  "effective_date": "2014-06-01",
+  "status": "现行",
+  "pages": 96,
+  "scope": "适用于开挖深度 5m 及以上，或开挖深度不足 5m 但地质条件、周边环境复杂的深基坑工程施工安全技术管理。",
+  "alias": [
+   "深基坑规范",
+   "深基坑施工规范"
+  ],
+  "clause_count": 12,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "住建部令第37号",
+  "std_no": "住建部令第37号",
+  "std_name": "危险性较大的分部分项工程安全管理规定",
+  "category": "基坑工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2018-03-08",
+  "effective_date": "2018-06-01",
+  "status": "现行",
+  "pages": 12,
+  "scope": "适用于房屋建筑和市政基础设施工程中危险性较大的分部分项工程安全管理。",
+  "alias": [
+   "37号令",
+   "危大工程令",
+   "危大工程规定"
+  ],
+  "clause_count": 5,
+  "doc_type": "法规"
+ },
+ {
+  "doc_id": "GB57252009",
+  "std_no": "GB 5725-2009",
+  "std_name": "安全网",
+  "category": "脚手架工程",
+  "publisher": "国家质量监督检验检疫总局、国家标准化管理委员会",
+  "issue_date": "2009-04-01",
+  "effective_date": "2009-12-01",
+  "status": "现行",
+  "pages": 36,
+  "scope": "适用于建筑施工及高处作业用安全网的生产、检验与使用。",
+  "alias": [
+   "安全网国标",
+   "密目网"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1282019",
+  "std_no": "JGJ 128-2019",
+  "std_name": "建筑施工门式钢管脚手架安全技术标准",
+  "category": "脚手架工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2019-03-29",
+  "effective_date": "2019-10-01",
+  "status": "现行",
+  "pages": 118,
+  "scope": "适用于建筑工程中门式钢管脚手架的设计、施工、使用与管理。",
+  "alias": [
+   "门式架规范"
+  ],
+  "clause_count": 1,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1302011",
+  "std_no": "JGJ 130-2011",
+  "std_name": "建筑施工扣件式钢管脚手架安全技术规范",
+  "category": "脚手架工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2011-01-28",
+  "effective_date": "2011-12-01",
+  "status": "现行",
+  "pages": 178,
+  "scope": "适用于房屋建筑工程和市政工程中扣件式钢管脚手架的设计、施工、使用与管理。",
+  "alias": [
+   "扣件式脚手架规范",
+   "脚手架规范",
+   "扣件架规范"
+  ],
+  "clause_count": 23,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1662016",
+  "std_no": "JGJ 166-2016",
+  "std_name": "建筑施工碗扣式钢管脚手架安全技术规范",
+  "category": "脚手架工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2016-06-06",
+  "effective_date": "2016-12-01",
+  "status": "现行",
+  "pages": 126,
+  "scope": "适用于建筑工程中碗扣式钢管脚手架的设计、施工、使用与管理。",
+  "alias": [
+   "碗扣架规范"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ2022010",
+  "std_no": "JGJ 202-2010",
+  "std_name": "建筑施工工具式脚手架安全技术规范",
+  "category": "脚手架工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2010-05-11",
+  "effective_date": "2010-12-01",
+  "status": "现行",
+  "pages": 126,
+  "scope": "适用于建筑施工中附着式升降脚手架、高处作业吊篮、外挂防护架等工具式脚手架的设计、施工与使用。",
+  "alias": [
+   "工具式脚手架",
+   "爬架规范",
+   "吊篮规范"
+  ],
+  "clause_count": 7,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJT2312021",
+  "std_no": "JGJ/T 231-2021",
+  "std_name": "建筑施工承插型盘扣式钢管脚手架安全技术标准",
+  "category": "脚手架工程",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2021-03-09",
+  "effective_date": "2021-10-01",
+  "status": "现行",
+  "pages": 142,
+  "scope": "适用于建筑工程中承插型盘扣式钢管脚手架的设计、施工、使用与管理。",
+  "alias": [
+   "盘扣架规范",
+   "盘扣式脚手架"
+  ],
+  "clause_count": 3,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1622008",
+  "std_no": "JGJ 162-2008",
+  "std_name": "建筑施工模板安全技术规范",
+  "category": "模板支架",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2008-08-06",
+  "effective_date": "2009-01-01",
+  "status": "现行",
+  "pages": 156,
+  "scope": "适用于建筑工程模板工程的设计、施工、验收及拆除。",
+  "alias": [
+   "模板规范",
+   "模板支架规范"
+  ],
+  "clause_count": 12,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1952010",
+  "std_no": "JGJ 195-2010",
+  "std_name": "液压爬升模板工程技术规程",
+  "category": "模板支架",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2010-05-11",
+  "effective_date": "2010-12-01",
+  "status": "现行",
+  "pages": 104,
+  "scope": "适用于建筑工程中液压爬升模板工程的设计、施工与安全管理。",
+  "alias": [
+   "爬模规范"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ3002013",
+  "std_no": "JGJ 300-2013",
+  "std_name": "建筑施工临时支撑结构技术规范",
+  "category": "模板支架",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2013-06-08",
+  "effective_date": "2014-01-01",
+  "status": "现行",
+  "pages": 88,
+  "scope": "适用于建筑工程施工中临时支撑结构的设计、施工、验收与监测。",
+  "alias": [
+   "临时支撑结构规范"
+  ],
+  "clause_count": 4,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ3862016",
+  "std_no": "JGJ 386-2016",
+  "std_name": "组合铝合金模板工程技术规程",
+  "category": "模板支架",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2016-06-06",
+  "effective_date": "2016-12-01",
+  "status": "现行",
+  "pages": 96,
+  "scope": "适用于建筑工程中组合铝合金模板的设计、施工与验收。",
+  "alias": [
+   "铝模规范",
+   "铝合金模板"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB28112019",
+  "std_no": "GB 2811-2019",
+  "std_name": "头部防护 安全帽",
+  "category": "高处作业",
+  "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+  "issue_date": "2019-06-04",
+  "effective_date": "2020-01-01",
+  "status": "现行",
+  "pages": 24,
+  "scope": "适用于头部防护用安全帽产品的生产、检验与使用。",
+  "alias": [
+   "安全帽国标"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB60952021",
+  "std_no": "GB 6095-2021",
+  "std_name": "坠落防护 安全带",
+  "category": "高处作业",
+  "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+  "issue_date": "2021-05-21",
+  "effective_date": "2022-01-01",
+  "status": "现行",
+  "pages": 32,
+  "scope": "适用于高处作业及坠落防护用安全带产品的生产、检验与使用。",
+  "alias": [
+   "安全带国标"
+  ],
+  "clause_count": 1,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ802016",
+  "std_no": "JGJ 80-2016",
+  "std_name": "建筑施工高处作业安全技术规范",
+  "category": "高处作业",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2016-03-25",
+  "effective_date": "2016-09-01",
+  "status": "现行",
+  "pages": 112,
+  "scope": "适用于建筑施工中高处作业的安全技术管理。",
+  "alias": [
+   "高处作业规范",
+   "临边洞口规范"
+  ],
+  "clause_count": 20,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ462005",
+  "std_no": "JGJ 46-2005",
+  "std_name": "施工现场临时用电安全技术规范",
+  "category": "施工用电",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2005-03-25",
+  "effective_date": "2005-08-01",
+  "status": "现行",
+  "pages": 148,
+  "scope": "适用于施工现场临时用电工程的设计、施工、验收与运行维护。",
+  "alias": [
+   "临时用电规范",
+   "临电规范",
+   "三级配电"
+  ],
+  "clause_count": 26,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB51442006",
+  "std_no": "GB 5144-2006",
+  "std_name": "塔式起重机安全规程",
+  "category": "起重机械",
+  "publisher": "国家质量监督检验检疫总局、国家标准化管理委员会",
+  "issue_date": "2006-06-19",
+  "effective_date": "2007-01-01",
+  "status": "现行",
+  "pages": 48,
+  "scope": "适用于塔式起重机的设计、制造、安装、使用与维护。",
+  "alias": [
+   "塔机安全规程"
+  ],
+  "clause_count": 2,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1962010",
+  "std_no": "JGJ 196-2010",
+  "std_name": "建筑施工塔式起重机安装、使用、拆卸安全技术规程",
+  "category": "起重机械",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2010-03-31",
+  "effective_date": "2010-10-01",
+  "status": "现行",
+  "pages": 132,
+  "scope": "适用于建筑施工中塔式起重机的安装、使用、拆卸及安全管理。",
+  "alias": [
+   "塔机规范",
+   "塔吊规范"
+  ],
+  "clause_count": 8,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ2152010",
+  "std_no": "JGJ 215-2010",
+  "std_name": "建筑施工升降机安装、使用、拆卸安全技术规程",
+  "category": "起重机械",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2010-05-11",
+  "effective_date": "2010-12-01",
+  "status": "现行",
+  "pages": 118,
+  "scope": "适用于建筑施工中施工升降机的安装、使用、拆卸及安全管理。",
+  "alias": [
+   "施工升降机规范",
+   "电梯规范"
+  ],
+  "clause_count": 4,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ2762012",
+  "std_no": "JGJ 276-2012",
+  "std_name": "建筑施工起重吊装工程安全技术规范",
+  "category": "起重机械",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2012-01-11",
+  "effective_date": "2012-08-01",
+  "status": "现行",
+  "pages": 104,
+  "scope": "适用于建筑施工中起重吊装工程的安全技术管理。",
+  "alias": [
+   "吊装规范"
+  ],
+  "clause_count": 4,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ332012",
+  "std_no": "JGJ 33-2012",
+  "std_name": "建筑机械使用安全技术规程",
+  "category": "起重机械",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2012-01-11",
+  "effective_date": "2012-08-01",
+  "status": "现行",
+  "pages": 256,
+  "scope": "适用于建筑施工中建筑机械的使用、维护与安全管理。",
+  "alias": [
+   "建筑机械规范"
+  ],
+  "clause_count": 6,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ882010",
+  "std_no": "JGJ 88-2010",
+  "std_name": "龙门架及井架物料提升机安全技术规范",
+  "category": "起重机械",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2010-01-08",
+  "effective_date": "2010-07-01",
+  "status": "现行",
+  "pages": 96,
+  "scope": "适用于建筑工程中龙门架及井架物料提升机的设计、安装、使用与拆除。",
+  "alias": [
+   "物料提升机规范"
+  ],
+  "clause_count": 3,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB125232011",
+  "std_no": "GB 12523-2011",
+  "std_name": "建筑施工场界环境噪声排放标准",
+  "category": "文明施工与消防",
+  "publisher": "环境保护部、国家质量监督检验检疫总局",
+  "issue_date": "2011-09-29",
+  "effective_date": "2012-07-01",
+  "status": "现行",
+  "pages": 12,
+  "scope": "适用于建筑施工场地边界环境噪声排放的管理与监测。",
+  "alias": [
+   "噪声标准",
+   "施工噪声"
+  ],
+  "clause_count": 3,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB506562011",
+  "std_no": "GB 50656-2011",
+  "std_name": "建筑施工企业安全生产管理规范",
+  "category": "文明施工与消防",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2011-02-18",
+  "effective_date": "2012-05-01",
+  "status": "现行",
+  "pages": 92,
+  "scope": "适用于建筑施工企业安全生产管理体系的建立与运行。",
+  "alias": [
+   "安全管理规范"
+  ],
+  "clause_count": 5,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "GB507202011",
+  "std_no": "GB 50720-2011",
+  "std_name": "建设工程施工现场消防安全技术规范",
+  "category": "文明施工与消防",
+  "publisher": "中华人民共和国住房和城乡建设部、国家质量监督检验检疫总局",
+  "issue_date": "2011-06-06",
+  "effective_date": "2012-01-01",
+  "status": "现行",
+  "pages": 86,
+  "scope": "适用于新建、改建、扩建的建设工程施工现场消防安全管理。",
+  "alias": [
+   "消防规范",
+   "临建消防"
+  ],
+  "clause_count": 10,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ1462013",
+  "std_no": "JGJ 146-2013",
+  "std_name": "建设工程施工现场环境与卫生标准",
+  "category": "文明施工与消防",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2013-10-09",
+  "effective_date": "2014-06-01",
+  "status": "现行",
+  "pages": 78,
+  "scope": "适用于建设工程施工现场的环境保护与卫生管理。",
+  "alias": [
+   "环境与卫生标准",
+   "文明施工标准"
+  ],
+  "clause_count": 4,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "JGJ592011",
+  "std_no": "JGJ 59-2011",
+  "std_name": "建筑施工安全检查标准",
+  "category": "文明施工与消防",
+  "publisher": "中华人民共和国住房和城乡建设部",
+  "issue_date": "2011-05-03",
+  "effective_date": "2012-07-01",
+  "status": "现行",
+  "pages": 168,
+  "scope": "适用于建筑施工企业及施工现场的安全生产检查评定。",
+  "alias": [
+   "安全检查标准",
+   "评分表"
+  ],
+  "clause_count": 4,
+  "doc_type": "标准"
+ },
+ {
+  "doc_id": "QZAJT202401",
+  "std_no": "Q/ZAJT-2024-01",
+  "std_name": "企业施工现场安全检查管理办法",
+  "category": "文明施工与消防",
+  "publisher": "筑安建设集团有限公司",
+  "issue_date": "2024-01-15",
+  "effective_date": "2024-02-01",
+  "status": "企业现行",
+  "pages": 24,
+  "scope": "集团所属各项目部施工现场安全检查、隐患分级与整改闭环管理。",
+  "alias": [
+   "集团检查办法",
+   "企业检查制度"
+  ],
+  "clause_count": 3,
+  "doc_type": "企业制度"
+ },
+ {
+  "doc_id": "QZAJT202402",
+  "std_no": "Q/ZAJT-2024-02",
+  "std_name": "安全隐患分级判定与整改闭环管理办法",
+  "category": "文明施工与消防",
+  "publisher": "筑安建设集团有限公司",
+  "issue_date": "2024-03-01",
+  "effective_date": "2024-03-15",
+  "status": "企业现行",
+  "pages": 18,
+  "scope": "集团所属各项目部安全隐患分级判定、整改单开具与闭环验收。",
+  "alias": [
+   "隐患分级办法",
+   "整改闭环办法"
+  ],
+  "clause_count": 3,
+  "doc_type": "企业制度"
+ },
+ {
+  "doc_id": "国务院令第393号",
+  "std_no": "国务院令第393号",
+  "std_name": "建设工程安全生产管理条例",
+  "category": "文明施工与消防",
+  "publisher": "中华人民共和国国务院",
+  "issue_date": "2003-11-24",
+  "effective_date": "2004-02-01",
+  "status": "现行",
+  "pages": 18,
+  "scope": "适用于建设工程的新建、扩建、改建和拆除等有关活动及实施对建设工程安全生产的监督管理。",
+  "alias": [
+   "393号令",
+   "安全生产管理条例"
+  ],
+  "clause_count": 3,
+  "doc_type": "法规"
+ }
+]

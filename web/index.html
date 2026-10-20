@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>筑安云 · 建筑施工安全规范智能问答系统</title>
+<link rel="stylesheet" href="/static/assets/app.css?v=1" />
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2.5 27 6.8v9.4c0 6.4-4.4 11.6-11 13.3C9.4 27.8 5 22.6 5 16.2V6.8L16 2.5Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 15.6l3.4 3.4L21.6 12" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="brand-text">
+        <div class="brand-name">筑安云</div>
+        <div class="brand-sub">建筑施工安全规范智能问答系统</div>
+      </div>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="qa">问答</button>
+      <button class="tab" data-view="kb">知识库</button>
+      <button class="tab" data-view="eval">评测</button>
+      <button class="tab" data-view="sessions">会话</button>
+    </nav>
+
+    <div class="sys">
+      <span class="dot" id="dotIndex" title="索引状态"></span><span class="sys-text" id="sysIndex">索引加载中</span>
+      <span class="sep"></span>
+      <span class="dot" id="dotModel" title="向量模型"></span><span class="sys-text" id="sysModel">模型</span>
+      <span class="sep"></span>
+      <span class="ver" id="verText">v1.4.2</span>
+    </div>
+  </header>
+
+  <!-- ============ 问答 ============ -->
+  <section class="view active" id="view-qa">
+    <aside class="left">
+      <div class="panel-h">规范分类</div>
+      <ul class="cat-list" id="catList">
+        <li class="cat active" data-cat=""><span>全部规范</span><b id="cntAll">—</b></li>
+      </ul>
+
+      <div class="panel-h mt">知识库</div>
+      <div class="kv"><span>规范文件</span><b id="kbDocs">—</b></div>
+      <div class="kv"><span>条文条目</span><b id="kbClauses">—</b></div>
+      <div class="kv"><span>强制性条文</span><b id="kbForce">—</b></div>
+      <div class="kv"><span>企业制度</span><b id="kbEnt">—</b></div>
+
+      <div class="panel-h mt">当前会话</div>
+      <div class="sess-mini">
+        <div class="sess-mini-title" id="sessTitle">新会话</div>
+        <div class="sess-mini-meta" id="sessMeta">未开始</div>
+        <button class="btn-text" id="btnNew">+ 新建会话</button>
+      </div>
+
+      <div class="tip">
+        <div class="tip-t">检索链路</div>
+        <div class="tip-b">稠密 + 稀疏 + BM25 三路召回，RRF 融合后精排，父块回溯保证强制性条文完整引用。</div>
+      </div>
+    </aside>
+
+    <div class="center">
+      <div class="chat" id="chat">
+        <div class="welcome" id="welcome">
+          <div class="welcome-t">建筑施工安全规范问答</div>
+          <div class="welcome-s">已接入 33 部国标/行标、企业制度与隐患案例，回答附规范编号、条文号与条文等级，可直接用于整改单引用。</div>
+          <div class="chips" id="chips">
+            <button class="chip">脚手架连墙件间距要求是多少</button>
+            <button class="chip">基坑边堆土 2 米算不算重大隐患</button>
+            <button class="chip">配电箱一闸多机怎么整改</button>
+            <button class="chip">安全带应该怎么挂</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="composer">
+        <div class="composer-top">
+          <label class="sel">
+            <span>分类</span>
+            <select id="catSelect">
+              <option value="">自动判断</option>
+            </select>
+          </label>
+          <div class="stage-bar" id="stageBar">
+            <span class="stage" data-stage="intent">意图</span>
+            <span class="stage" data-stage="rewrite">改写</span>
+            <span class="stage" data-stage="retrieve">召回</span>
+            <span class="stage" data-stage="rerank">精排</span>
+            <span class="stage" data-stage="generate">生成</span>
+          </div>
+        </div>
+        <div class="input-row">
+          <textarea id="q" rows="1" placeholder="输入问题，Enter 发送，Shift+Enter 换行"></textarea>
+          <button class="send" id="send">发送</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="right">
+      <div class="right-head">
+        <div class="panel-h">条文依据</div>
+        <div class="right-sub" id="citeCount">暂无引用</div>
+      </div>
+      <div class="cites" id="cites">
+        <div class="empty">
+          <div class="empty-t">尚未提问</div>
+          <div class="empty-s">回答生成后，右侧会列出命中的规范条文，可点开查看原文与检查要点。</div>
+        </div>
+      </div>
+      <div class="trace-box" id="traceBox" hidden>
+        <div class="trace-h" id="traceToggle">检索明细 <span>▾</span></div>
+        <div class="trace-body" id="traceBody"></div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ============ 知识库 ============ -->
+  <section class="view" id="view-kb">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>知识库</h1>
+          <p class="page-sub">7 大分类 · 33 部规范 · 218 条结构化条文，含规范编号、条文等级、章节与页码元数据。</p>
+        </div>
+        <div class="page-actions">
+          <label class="upload-btn">
+            上传文档并入库
+            <input type="file" id="fileInput" accept=".txt,.md,.csv,.pdf,.docx,.png,.jpg,.jpeg" hidden />
+          </label>
+        </div>
+      </div>
+
+      <div class="stat-row" id="kbStats"></div>
+
+      <div class="split">
+        <div class="card">
+          <div class="card-h">
+            <span>规范文件</span>
+            <input class="search" id="kbSearch" placeholder="搜索规范名称 / 编号 / 简称" />
+          </div>
+          <div class="doc-table" id="docTable"></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><span>文档详情</span><span class="muted" id="docMeta"></span></div>
+          <div class="doc-detail" id="docDetail">
+            <div class="empty"><div class="empty-t">选择左侧文档</div><div class="empty-s">查看章节与条文原文。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 评测 ============ -->
+  <section class="view" id="view-eval">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>评测</h1>
+          <p class="page-sub">基于业务测试集计算 Faithfulness / Answer Relevancy / Context Precision / Context Recall / Answer Correctness。</p>
+        </div>
+        <div class="page-actions">
+          <button class="btn" id="btnEval">运行评测</button>
+          <span class="muted" id="evalState"></span>
+        </div>
+      </div>
+
+      <div class="metric-grid" id="metricGrid">
+        <div class="metric"><div class="metric-l">Faithfulness</div><div class="metric-v">—</div></div>
+        <div class="metric"><div class="metric-l">Answer Relevancy</div><div class="metric-v">—</div></div>
+        <div class="metric"><div class="metric-l">Context Precision</div><div class="metric-v">—</div></div>
+        <div class="metric"><div class="metric-l">Context Recall</div><div class="metric-v">—</div></div>
+        <div class="metric"><div class="metric-l">Answer Correctness</div><div class="metric-v">—</div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><span>分意图指标</span><span class="muted" id="evalMeta"></span></div>
+        <div id="intentTable"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><span>逐条结果</span><span class="muted">显示前 40 条</span></div>
+        <div class="eval-list" id="evalList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 会话 ============ -->
+  <section class="view" id="view-sessions">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>会话记录</h1>
+          <p class="page-sub">问答会话持久化存储，可回溯每次回答的引用条文与检索明细。</p>
+        </div>
+        <div class="page-actions">
+          <button class="btn-ghost" id="btnClearSessions">清空全部</button>
+        </div>
+      </div>
+      <div class="split">
+        <div class="card">
+          <div class="card-h"><span>会话列表</span><span class="muted" id="sessCount"></span></div>
+          <div class="sess-list" id="sessList"></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><span>会话详情</span><span class="muted" id="sessDetailMeta"></span></div>
+          <div class="sess-detail" id="sessDetail">
+            <div class="empty"><div class="empty-t">选择左侧会话</div><div class="empty-s">查看完整问答与引用。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+</div>
+<script src="/static/assets/app.js?v=1"></script>
+</body>
+</html>

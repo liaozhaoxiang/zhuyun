@@ -1,0 +1,30 @@
+# 虚拟环境
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# 运行数据（向量库、SQLite、上传文件）
+data/
+logs/
+*.db
+*.db-wal
+*.db-shm
+*.npz
+
+# 评测运行结果（保留 testset 与脚本）
+eval/run_*.json
+
+# 本地配置
+.env
+
+# 本地模型（约 680MB，README 有下载说明）
+models/
+
+# 会话临时文件（一律不进仓库）
+_*
+
+# 系统文件
+Thumbs.db
+.DS_Store
+*.log

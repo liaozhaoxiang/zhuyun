@@ -1,0 +1,131 @@
+version: "3.9"
+
+# 筑安云 · 生产形态编排
+# app 通过服务名访问 milvus / mysql / redis，不需要改代码，只改环境变量。
+
+services:
+  etcd:
+    container_name: zhuan-etcd
+    image: quay.io/coreos/etcd:v3.5.16
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ETCD_SNAPSHOT_COUNT=50000
+    volumes:
+      - etcd_data:/etcd
+    command: etcd -advertise-client-urls=http://etcd:2379 -listen-client-urls=http://0.0.0.0:2379 --data-dir /etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  minio:
+    container_name: zhuan-minio
+    image: minio/minio:RELEASE.2024-05-28T17-19-04Z
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - minio_data:/minio_data
+    command: minio server /minio_data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  milvus:
+    container_name: zhuan-milvus
+    image: milvusdb/milvus:v2.5.4
+    command: ["milvus", "run", "standalone"]
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes:
+      - milvus_data:/var/lib/milvus
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 5
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    depends_on:
+      - etcd
+      - minio
+
+  redis:
+    container_name: zhuan-redis
+    image: redis:7.4-alpine
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  mysql:
+    container_name: zhuan-mysql
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: zhuan_root_2024
+      MYSQL_DATABASE: zhuan
+      MYSQL_USER: zhuan
+      MYSQL_PASSWORD: zhuan_pass_2024
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-pzhuan_root_2024"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  app:
+    container_name: zhuan-app
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    environment:
+      ZH_AN_HOST: 0.0.0.0
+      ZH_AN_PORT: 8011
+      ZH_AN_DB_BACKEND: mysql
+      ZH_AN_MYSQL_DSN: zhuan:zhuan_pass_2024@mysql:3306/zhuan
+      ZH_AN_REDIS_URL: redis://redis:6379/0
+      ZH_AN_MILVUS_URI: http://milvus:19530
+      ZH_AN_EMBED_MODEL: BAAI/bge-m3
+      ZH_AN_RERANK_MODEL: BAAI/bge-reranker-large
+      HF_ENDPOINT: https://hf-mirror.com
+    volumes:
+      - ../data:/app/data
+      - ../corpus:/app/corpus
+      - hf_cache:/root/.cache/huggingface
+    ports:
+      - "8011:8011"
+    depends_on:
+      milvus:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+
+volumes:
+  etcd_data:
+  minio_data:
+  milvus_data:
+  redis_data:
+  mysql_data:
+  hf_cache:

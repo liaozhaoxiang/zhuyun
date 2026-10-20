@@ -1,0 +1,265 @@
+{"qid": "t001", "question": "专项方案中明确支护设计使用期有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-3.1.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t002", "question": "周边有地铁、管线、既有建筑时有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-3.1.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t003", "question": "开挖深度超过 10m不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ1202012-3.1.4"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t004", "question": "监测方案在开挖前审批完成需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1202012-8.1.1"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t005", "question": "阳角、深浅坑交界、邻近建筑侧应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.1.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t006", "question": "报警后有书面报告与处置应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.1.5"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t007", "question": "现场开挖期间监测频率达标不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ1202012-8.2.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t008", "question": "有基本试验报告不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1202012-4.6.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t009", "question": "现场换撑条件达到要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-4.7.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t010", "question": "建筑基坑支护技术规程对基坑工程设计是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-3.2.1"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t011", "question": "现场编制专项方案不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-3.0.1"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t012", "question": "分层厚度与方案一致不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ3112013-3.0.4"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t013", "question": "坑边堆土距离与有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-5.2.3"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t014", "question": "挖机旋转半径内站人应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-5.2.5"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t015", "question": "应急预案编制演练这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-7.1.2"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t016", "question": "防护栏杆连续封闭不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ3112013-7.1.5"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t017", "question": "现场实际坡度与设计对比要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1802009-6.1.3"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t018", "question": "降水连续应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1802009-8.2.2"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t019", "question": "检查发现气体检测缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1802009-5.1.6"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t020", "question": "有模板支架计算书整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ1622008-5.1.1"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t021", "question": "底部设垫板应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-6.1.9"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t022", "question": "建筑施工模板安全技术规范对扫地杆连续是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-6.2.4"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t023", "question": "检查发现同条件试块强度报告缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1622008-7.1.2"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t024", "question": "警戒区与警示牌整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1622008-7.1.5"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t025", "question": "时支撑结构搭设完成后有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3002013-6.1.4"], "gold_doc": "JGJ 300-2013", "source": "template"}
+{"qid": "t026", "question": "浇筑期间有专人监测应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3002013-7.0.3"], "gold_doc": "JGJ 300-2013", "source": "template"}
+{"qid": "t027", "question": "钢管有产品合格证与检测报告有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-3.1.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t028", "question": "实测外径与壁厚整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-3.1.3"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t029", "question": "扣件有合格证的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-3.2.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t030", "question": "实测立杆纵距、横距、步距应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.2.3"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t031", "question": "基础硬化排水这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-6.3.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t032", "question": "连墙件与布置整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-6.4.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t033", "question": "24m 以上刚性连接有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.4.5"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t034", "question": "剪刀撑连续到顶有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.6.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t035", "question": "24m 以上全立面连续有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-6.6.5"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t036", "question": "脚手板满铺不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-6.7.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t037", "question": "一次搭设的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-7.1.3"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t038", "question": "有验收与挂牌的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-8.2.1"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t039", "question": "检查发现存在擅自拆除缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-9.0.4"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t040", "question": "安全网全封闭整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-9.0.6"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t041", "question": "底座插入深度有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJT2312021-6.1.5"], "gold_doc": "JGJ/T 231-2021", "source": "template"}
+{"qid": "t042", "question": "建筑施工承插型盘扣式钢管脚手架安全技术标准对插销楔紧是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJT2312021-7.2.3"], "gold_doc": "JGJ/T 231-2021", "source": "template"}
+{"qid": "t043", "question": "检查发现上碗扣锁紧缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1662016-6.1.3"], "gold_doc": "JGJ 166-2016", "source": "template"}
+{"qid": "t044", "question": "高处作业措施进施工组织设计不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-3.1.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t045", "question": "建筑施工高处作业安全技术规范对临边有防护是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-4.1.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t046", "question": "上杆 1.2m有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-4.1.3"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t047", "question": "检查发现洞口封堵或防护缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-4.2.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t048", "question": "电梯井口整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-4.2.3"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t049", "question": "现场梯脚防滑要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-5.1.2"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t050", "question": "有可靠立足点的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-5.2.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t051", "question": "检查发现平台防护栏杆缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-6.1.3"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t052", "question": "交叉作业有隔离防护需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-7.1.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t053", "question": "系安全带有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-8.1.1"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t054", "question": "使用前检查有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["GB60952021-6.2.3"], "gold_doc": "GB 6095-2021", "source": "template"}
+{"qid": "t055", "question": "安全帽在有效期这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["GB28112019-5.1.2"], "gold_doc": "GB 2811-2019", "source": "template"}
+{"qid": "t056", "question": "编制临时用电组织设计整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-3.1.1"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t057", "question": "施工现场临时用电有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-3.1.5"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t058", "question": "采用 TN-S 系统应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-5.1.2"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t059", "question": "现场一机一闸一漏一箱不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-8.1.3"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t060", "question": "箱体安装整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-8.1.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t061", "question": "箱体材质与厚度的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.1.6"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t062", "question": "施工现场临时用电安全技术规范对漏电保护器参数是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.2.10"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t063", "question": "防雷接地电阻测试不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-5.4.7"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t064", "question": "电缆沿地拖拽需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-7.2.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t065", "question": "架在脚手架上的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-7.2.9"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t066", "question": "配电室选址的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-6.1.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t067", "question": "操作人员持证这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ332012-4.1.4"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t068", "question": "安全装置整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ332012-5.1.7"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t069", "question": "安装单位资质有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1962010-3.1.2"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t070", "question": "现场检测报告要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1962010-4.2.3"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t071", "question": "建筑施工塔式起重相关要求这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1962010-4.3.4"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t072", "question": "群塔方案需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1962010-4.3.7"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t073", "question": "检测报告应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2152010-4.1.3"], "gold_doc": "JGJ 215-2010", "source": "template"}
+{"qid": "t074", "question": "建筑施工升降机安装、使用、拆卸安全技术规程对施工升降机是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2152010-5.0.7"], "gold_doc": "JGJ 215-2010", "source": "template"}
+{"qid": "t075", "question": "安全装置有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ882010-6.1.2"], "gold_doc": "JGJ 88-2010", "source": "template"}
+{"qid": "t076", "question": "警戒区范围整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ2762012-4.1.4"], "gold_doc": "JGJ 276-2012", "source": "template"}
+{"qid": "t077", "question": "现场吊索具检查要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2762012-4.2.5"], "gold_doc": "JGJ 276-2012", "source": "template"}
+{"qid": "t078", "question": "灭火器配置与应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-5.1.1"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t079", "question": "配置计算书不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-5.2.2"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t080", "question": "夹芯板芯材为岩棉不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["GB507202011-4.1.5"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t081", "question": "动火证办理应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-6.2.2"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t082", "question": "通道宽度与净高有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-6.2.5"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t083", "question": "噪声监测不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["GB125232011-4.1"], "gold_doc": "GB 12523-2011", "source": "template"}
+{"qid": "t084", "question": "检查制度与频次整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["GB506562011-7.0.4"], "gold_doc": "GB 50656-2011", "source": "template"}
+{"qid": "t085", "question": "三级教育的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["GB506562011-9.0.3"], "gold_doc": "GB 50656-2011", "source": "template"}
+{"qid": "t086", "question": "方案编制主体正确有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["住建部令第37号-第十条"], "gold_doc": "住建部令第37号", "source": "template"}
+{"qid": "t087", "question": "组织专家论证这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["住建部令第37号-第十四条"], "gold_doc": "住建部令第37号", "source": "template"}
+{"qid": "t088", "question": "现场公告牌整改期限多久", "intent": "整改要求", "gold_clause_ids": ["住建部令第37号-第十六条"], "gold_doc": "住建部令第37号", "source": "template"}
+{"qid": "t089", "question": "施工组织设计含安全技术措施应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["国务院令第393号-第二十六条"], "gold_doc": "国务院令第393号", "source": "template"}
+{"qid": "t090", "question": "企业施工现场安全检查管理办法对隐患分级准确是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["QZAJT202401-4.2.1"], "gold_doc": "Q/ZAJT-2024-01", "source": "template"}
+{"qid": "t091", "question": "整改责任人明确有问题吗", "intent": "隐患判定", "gold_clause_ids": ["QZAJT202401-5.1.3"], "gold_doc": "Q/ZAJT-2024-01", "source": "template"}
+{"qid": "t092", "question": "隐患录入系统整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["QZAJT202402-3.1.4"], "gold_doc": "Q/ZAJT-2024-02", "source": "template"}
+{"qid": "t093", "question": "桩位放线复核应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-4.2.4"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t094", "question": "槽壁稳定性验算的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-4.3.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t095", "question": "分层开挖深度这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1202012-4.4.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t096", "question": "面层厚度实测需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1202012-4.4.4"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t097", "question": "现场监测项目覆盖一级基坑要求要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.2.5"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t098", "question": "现场报警值在方案中量化要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.3.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t099", "question": "测点布置间距不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ1202012-8.3.4"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t100", "question": "拆除专项方案整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ3112013-6.0.3"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t101", "question": "现场管线调查资料要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-4.0.5"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t102", "question": "建筑深基坑工程施工安全技术规范对道路硬化是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-5.3.2"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t103", "question": "测点保护措施不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-7.2.4"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t104", "question": "爆破单位资质需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1802009-7.1.5"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t105", "question": "管线交底应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1802009-4.0.6"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t106", "question": "现场第三方监测资质要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["GB504972019-3.0.3"], "gold_doc": "GB 50497-2019", "source": "template"}
+{"qid": "t107", "question": "预警响应流程有问题吗", "intent": "隐患判定", "gold_clause_ids": ["GB504972019-8.0.5"], "gold_doc": "GB 50497-2019", "source": "template"}
+{"qid": "t108", "question": "降水方案含渗流计算不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1202012-7.1.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t109", "question": "回灌井间距有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-7.4.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t110", "question": "支撑安装及时性有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-4.8.4"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t111", "question": "换撑完成情况这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1202012-4.8.6"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t112", "question": "垫层及时需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1202012-4.10.2"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t113", "question": "建筑基坑支护技术规程对曲线绘制是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.4.3"], "gold_doc": "JGJ 120-2012", "source": "template"}
+{"qid": "t114", "question": "现场水位降至开挖面下 0.5m要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-5.1.4"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t115", "question": "现场专用通道不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-4.0.8"], "gold_doc": "JGJ 311-2013", "source": "template"}
+{"qid": "t116", "question": "道路承载力整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ1802009-5.2.8"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t117", "question": "建筑施工土石方工程安全技术规范对雨季施工是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1802009-9.0.3"], "gold_doc": "JGJ 180-2009", "source": "template"}
+{"qid": "t118", "question": "现场悬挑梁型号与计算书要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.10.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t119", "question": "锚固段/悬挑段比例有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-6.10.4"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t120", "question": "立杆定位措施整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-6.10.7"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t121", "question": "现场防坠装置与要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2022010-4.3.2"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t122", "question": "升降前验收有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2022010-4.4.1"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t123", "question": "现场穿墙螺栓规格不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ2022010-4.2.5"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t124", "question": "安全绳独立整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ2022010-5.2.3"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t125", "question": "安全锁标定证书的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2022010-5.2.6"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t126", "question": "前支架支撑有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2022010-5.3.2"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t127", "question": "作业人员不不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ2022010-5.4.4"], "gold_doc": "JGJ 202-2010", "source": "template"}
+{"qid": "t128", "question": "门洞加固形式整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-6.9.3"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t129", "question": "专用通道应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.8.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t130", "question": "建筑施工扣件式钢管脚手架安全技术规范对中间验收是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-8.2.4"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t131", "question": "现场架子工证件不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-9.0.2"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t132", "question": "天气预警响应整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-9.0.8"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t133", "question": "现场立杆接头形式要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.2.6"], "gold_doc": "JGJ 130-2011", "source": "template"}
+{"qid": "t134", "question": "固定方式应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["GB57252009-6.1.4"], "gold_doc": "GB 5725-2009", "source": "template"}
+{"qid": "t135", "question": "检查发现支撑杆间距缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["GB57252009-6.2.2"], "gold_doc": "GB 5725-2009", "source": "template"}
+{"qid": "t136", "question": "交叉支撑不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1282019-6.2.2"], "gold_doc": "JGJ 128-2019", "source": "template"}
+{"qid": "t137", "question": "拆除顺序的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1662016-7.3.2"], "gold_doc": "JGJ 166-2016", "source": "template"}
+{"qid": "t138", "question": "现场剪刀撑连续性要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJT2312021-6.2.4"], "gold_doc": "JGJ/T 231-2021", "source": "template"}
+{"qid": "t139", "question": "检查发现夜间警示灯缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-4.3.2"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t140", "question": "轮子连接需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-6.2.2"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t141", "question": "立杆垂直度应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-6.1.4"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t142", "question": "拉结措施的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-6.1.11"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t143", "question": "放线定位这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1622008-6.1.13"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t144", "question": "荷载取值不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1622008-4.2.1"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t145", "question": "现场模板支架搭设前要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-8.1.3"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t146", "question": "有专人观察的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1622008-8.1.6"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t147", "question": "拆除构件清运有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1622008-7.1.8"], "gold_doc": "JGJ 162-2008", "source": "template"}
+{"qid": "t148", "question": "安装顺序不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ3862016-6.2.5"], "gold_doc": "JGJ 386-2016", "source": "template"}
+{"qid": "t149", "question": "拆模审批有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3862016-6.3.4"], "gold_doc": "JGJ 386-2016", "source": "template"}
+{"qid": "t150", "question": "爬升前检查表的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1952010-6.2.3"], "gold_doc": "JGJ 195-2010", "source": "template"}
+{"qid": "t151", "question": "平台满铺不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["JGJ1952010-7.0.4"], "gold_doc": "JGJ 195-2010", "source": "template"}
+{"qid": "t152", "question": "临时支撑结构设计需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ3002013-5.1.5"], "gold_doc": "JGJ 300-2013", "source": "template"}
+{"qid": "t153", "question": "基础处理有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3002013-6.2.3"], "gold_doc": "JGJ 300-2013", "source": "template"}
+{"qid": "t154", "question": "建筑施工高处作业相关要求应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-5.1.5"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t155", "question": "检查发现搭设操作架缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-5.2.4"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t156", "question": "操作平台不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-5.2.6"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t157", "question": "平台的搁支点与上拉点有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-6.3.2"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t158", "question": "建筑施工高处作业安全技术规范对安全带系挂点下方是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-8.1.4"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t159", "question": "现场头部防护 安全帽相关要求不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["GB28112019-5.2.1"], "gold_doc": "GB 2811-2019", "source": "template"}
+{"qid": "t160", "question": "高处作业人员需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ802016-3.1.4"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t161", "question": "高处作业所用工具应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-3.1.6"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t162", "question": "建筑施工高处作业安全技术规范对坠落半径是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-7.1.4"], "gold_doc": "JGJ 80-2016", "source": "template"}
+{"qid": "t163", "question": "检查发现重复接地缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-5.3.2"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t164", "question": "总配电箱需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-8.2.3"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t165", "question": "导线材质的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.2.6"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t166", "question": "现场开关箱内要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.3.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t167", "question": "检查发现电焊机防护罩缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-9.1.3"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t168", "question": "二次侧保护器整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-9.1.5"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t169", "question": "施工现场照明应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-10.1.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t170", "question": "现场行灯电压要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-10.2.2"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t171", "question": "发电机接地这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-6.2.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t172", "question": "外电线路下方有作业整改期限多久", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-4.1.2"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t173", "question": "施工现场临时用电安全技术规范对吊装安全距离是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-4.1.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t174", "question": "电工证件的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.1.9"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t175", "question": "电缆敷设方式有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-9.3.2"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t176", "question": "漏电保护整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["JGJ462005-9.4.3"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t177", "question": "检查周期有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-3.2.4"], "gold_doc": "JGJ 46-2005", "source": "template"}
+{"qid": "t178", "question": "警戒区范围应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1962010-3.3.4"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t179", "question": "司机与信号工证件这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1962010-4.1.6"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t180", "question": "附着方案不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1962010-4.2.6"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t181", "question": "停机操作的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1962010-4.3.9"], "gold_doc": "JGJ 196-2010", "source": "template"}
+{"qid": "t182", "question": "司机证件有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2152010-5.0.3"], "gold_doc": "JGJ 215-2010", "source": "template"}
+{"qid": "t183", "question": "检查发现附墙架间距缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ2152010-4.2.6"], "gold_doc": "JGJ 215-2010", "source": "template"}
+{"qid": "t184", "question": "支腿垫板需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ332012-5.2.4"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t185", "question": "现场地面承载力要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ332012-5.3.6"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t186", "question": "载重标识应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ332012-5.4.3"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t187", "question": "现场机械设备的传动部位不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ332012-4.4.2"], "gold_doc": "JGJ 33-2012", "source": "template"}
+{"qid": "t188", "question": "大型构件吊装前不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ2762012-5.1.3"], "gold_doc": "JGJ 276-2012", "source": "template"}
+{"qid": "t189", "question": "随吊物升降有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2762012-5.2.4"], "gold_doc": "JGJ 276-2012", "source": "template"}
+{"qid": "t190", "question": "操作人员证件应该怎么设置", "intent": "规范条文查询", "gold_clause_ids": ["JGJ882010-7.0.4"], "gold_doc": "JGJ 88-2010", "source": "template"}
+{"qid": "t191", "question": "现场提升机的楼层卸料平台不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["JGJ882010-6.2.4"], "gold_doc": "JGJ 88-2010", "source": "template"}
+{"qid": "t192", "question": "安全装置不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["GB51442006-6.1.2"], "gold_doc": "GB 5144-2006", "source": "template"}
+{"qid": "t193", "question": "风速监测的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["GB51442006-9.2.3"], "gold_doc": "GB 5144-2006", "source": "template"}
+{"qid": "t194", "question": "消火栓间距有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-5.3.1"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t195", "question": "检查发现消防竖管缺失严重吗", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-5.3.6"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t196", "question": "消防责任人需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["GB507202011-6.1.4"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t197", "question": "功能分区的标准是多少", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-4.2.3"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t198", "question": "建设工程施工现场消防安全技术规范对危化品专库是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["GB507202011-6.2.8"], "gold_doc": "GB 50720-2011", "source": "template"}
+{"qid": "t199", "question": "建筑施工场界噪声测量这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["GB125232011-5.2.1"], "gold_doc": "GB 12523-2011", "source": "template"}
+{"qid": "t200", "question": "夜间施工许可需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["GB125232011-4.3"], "gold_doc": "GB 12523-2011", "source": "template"}
+{"qid": "t201", "question": "现场道路硬化要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1462013-4.1.3"], "gold_doc": "JGJ 146-2013", "source": "template"}
+{"qid": "t202", "question": "现场三级沉淀池要满足什么条件", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1462013-4.2.2"], "gold_doc": "JGJ 146-2013", "source": "template"}
+{"qid": "t203", "question": "厕所清洁有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1462013-5.1.4"], "gold_doc": "JGJ 146-2013", "source": "template"}
+{"qid": "t204", "question": "垃圾分类需要哪些整改措施", "intent": "整改要求", "gold_clause_ids": ["JGJ1462013-4.3.1"], "gold_doc": "JGJ 146-2013", "source": "template"}
+{"qid": "t205", "question": "建筑施工安全检查标准对建筑施工安全检查评定是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ592011-3.1.3"], "gold_doc": "JGJ 59-2011", "source": "template"}
+{"qid": "t206", "question": "建筑施工安全检查标准对责任制签订是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["JGJ592011-3.2.2"], "gold_doc": "JGJ 59-2011", "source": "template"}
+{"qid": "t207", "question": "基坑工程检查评分表这样做合规吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ592011-3.13.2"], "gold_doc": "JGJ 59-2011", "source": "template"}
+{"qid": "t208", "question": "脚手架检查评分表不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ592011-3.14.2"], "gold_doc": "JGJ 59-2011", "source": "template"}
+{"qid": "t209", "question": "责任制覆盖岗位有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["GB506562011-5.0.4"], "gold_doc": "GB 50656-2011", "source": "template"}
+{"qid": "t210", "question": "建筑施工企业安全生产管理规范对预案编制是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["GB506562011-10.0.3"], "gold_doc": "GB 50656-2011", "source": "template"}
+{"qid": "t211", "question": "交底针对性不到位属于什么等级", "intent": "隐患判定", "gold_clause_ids": ["GB506562011-8.0.5"], "gold_doc": "GB 50656-2011", "source": "template"}
+{"qid": "t212", "question": "监测方案整改完怎么验收", "intent": "整改要求", "gold_clause_ids": ["住建部令第37号-第十七条"], "gold_doc": "住建部令第37号", "source": "template"}
+{"qid": "t213", "question": "危险性较大的分部分项工程安全管理规定对验收标识牌是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["住建部令第37号-第二十条"], "gold_doc": "住建部令第37号", "source": "template"}
+{"qid": "t214", "question": "建设工程安全生产管理条例对防护用品发放是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["国务院令第393号-第三十二条"], "gold_doc": "国务院令第393号", "source": "template"}
+{"qid": "t215", "question": "现场也可以委托具有相不符合要求算不算隐患", "intent": "隐患判定", "gold_clause_ids": ["国务院令第393号-第三十五条"], "gold_doc": "国务院令第393号", "source": "template"}
+{"qid": "t216", "question": "项目经理带班检查不达标怎么整改", "intent": "整改要求", "gold_clause_ids": ["QZAJT202401-6.1.2"], "gold_doc": "Q/ZAJT-2024-01", "source": "template"}
+{"qid": "t217", "question": "整改单要素有什么规范要求", "intent": "规范条文查询", "gold_clause_ids": ["QZAJT202402-4.2.2"], "gold_doc": "Q/ZAJT-2024-02", "source": "template"}
+{"qid": "t218", "question": "安全隐患分级判定与整改闭环管理办法对月度隐患分析是怎么规定的", "intent": "规范条文查询", "gold_clause_ids": ["QZAJT202402-6.2.1"], "gold_doc": "Q/ZAJT-2024-02", "source": "template"}
+{"qid": "s001", "question": "脚手架连墙件少了很多，这事大不大", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-6.4.2", "JGJ1302011-9.0.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s002", "question": "基坑边上堆了两米高的土，可以吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-5.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s003", "question": "工人嫌热不戴安全帽怎么管", "intent": "规范条文查询", "gold_clause_ids": ["GB28112019-5.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s004", "question": "临边防护栏杆要多高", "intent": "规范条文查询", "gold_clause_ids": ["JGJ802016-4.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s005", "question": "塔吊力矩限制器被短接了，严重吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ332012-5.1.7", "JGJ1962010-4.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s006", "question": "配电箱一个闸刀接了三台机器", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-8.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s007", "question": "漏电保护器动作电流选多大", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.2.10"], "gold_doc": "", "source": "spoken"}
+{"qid": "s008", "question": "电梯井口就用木板挡了一下行不行", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-4.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s009", "question": "安全带能不能挂在吊篮上", "intent": "规范条文查询", "gold_clause_ids": ["JGJ2022010-5.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s010", "question": "模板支架顶托伸出太长有问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1622008-6.1.9"], "gold_doc": "", "source": "spoken"}
+{"qid": "s011", "question": "高支模要不要专家论证", "intent": "规范条文查询", "gold_clause_ids": ["JGJ3112013-3.0.1", "住建部令第37号-第十四条"], "gold_doc": "", "source": "spoken"}
+{"qid": "s012", "question": "动火作业没办证怎么处理", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-6.2.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s013", "question": "氧气瓶乙炔瓶放一起算不算重大隐患", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-6.2.8"], "gold_doc": "", "source": "spoken"}
+{"qid": "s014", "question": "宿舍用的泡沫夹芯板可以吗", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-4.1.5"], "gold_doc": "", "source": "spoken"}
+{"qid": "s015", "question": "夜间施工噪声多少分贝算超标", "intent": "规范条文查询", "gold_clause_ids": ["GB125232011-4.1"], "gold_doc": "", "source": "spoken"}
+{"qid": "s016", "question": "基坑监测多久测一次", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.2.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s017", "question": "基坑位移超过多少要报警", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1202012-8.3.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s018", "question": "脚手架剪刀撑要怎么设", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-6.6.2", "JGJ1302011-6.6.5"], "gold_doc": "", "source": "spoken"}
+{"qid": "s019", "question": "盘扣架插销没敲紧算问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJT2312021-7.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s020", "question": "悬挑架的工字钢锚固长度不够怎么办", "intent": "整改要求", "gold_clause_ids": ["JGJ1302011-6.10.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s021", "question": "吊篮安全锁过期了还能用吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ2022010-5.2.6"], "gold_doc": "", "source": "spoken"}
+{"qid": "s022", "question": "施工升降机楼层门联锁坏了", "intent": "隐患判定", "gold_clause_ids": ["JGJ2152010-5.0.7"], "gold_doc": "", "source": "spoken"}
+{"qid": "s023", "question": "临时用电没有做重复接地", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-5.3.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s024", "question": "电缆直接拖在地上泡水了", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-7.2.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s025", "question": "电焊机一次线太长怎么办", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-9.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s026", "question": "地下室照明用 220V 行灯行不行", "intent": "隐患判定", "gold_clause_ids": ["JGJ462005-10.2.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s027", "question": "塔吊和另一台塔吊离得太近", "intent": "隐患判定", "gold_clause_ids": ["JGJ1962010-4.3.7"], "gold_doc": "", "source": "spoken"}
+{"qid": "s028", "question": "汽车吊支腿支在回填土上", "intent": "隐患判定", "gold_clause_ids": ["JGJ332012-5.2.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s029", "question": "吊装的时候工人站在吊物下面", "intent": "隐患判定", "gold_clause_ids": ["JGJ2762012-5.2.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s030", "question": "模板没到强度就拆了怎么整改", "intent": "整改要求", "gold_clause_ids": ["JGJ1622008-7.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s031", "question": "脚手架验收要哪些资料", "intent": "规范条文查询", "gold_clause_ids": ["JGJ1302011-8.2.1"], "gold_doc": "", "source": "spoken"}
+{"qid": "s032", "question": "三级配电两级保护是什么意思", "intent": "规范条文查询", "gold_clause_ids": ["JGJ462005-8.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s033", "question": "基坑出现管涌还在挖土", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-7.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s034", "question": "危大工程专项方案谁编制", "intent": "规范条文查询", "gold_clause_ids": ["住建部令第37号-第十条"], "gold_doc": "", "source": "spoken"}
+{"qid": "s035", "question": "安全隐患整改单要写什么", "intent": "整改要求", "gold_clause_ids": ["QZAJT202402-4.2.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s036", "question": "重大隐患整改期限是几天", "intent": "整改要求", "gold_clause_ids": ["QZAJT202401-5.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s037", "question": "项目经理多久组织一次安全检查", "intent": "规范条文查询", "gold_clause_ids": ["QZAJT202401-6.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s038", "question": "这个隐患帮我判断一下等级", "intent": "隐患判定", "gold_clause_ids": ["QZAJT202401-4.2.1"], "gold_doc": "", "source": "spoken"}
+{"qid": "s039", "question": "裸露土方没覆盖算文明施工问题吗", "intent": "隐患判定", "gold_clause_ids": ["JGJ1462013-4.1.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s040", "question": "消防通道被材料占了", "intent": "隐患判定", "gold_clause_ids": ["GB507202011-6.2.5"], "gold_doc": "", "source": "spoken"}
+{"qid": "s041", "question": "安全网破了没换", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-9.0.6"], "gold_doc": "", "source": "spoken"}
+{"qid": "s042", "question": "模板支架没有剪刀撑", "intent": "隐患判定", "gold_clause_ids": ["JGJ1622008-6.2.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s043", "question": "基坑边能不能停混凝土泵车", "intent": "隐患判定", "gold_clause_ids": ["JGJ3112013-5.2.3"], "gold_doc": "", "source": "spoken"}
+{"qid": "s044", "question": "梯子能不能垫砖使用", "intent": "隐患判定", "gold_clause_ids": ["JGJ802016-5.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s045", "question": "吊篮里能不能站三个人", "intent": "隐患判定", "gold_clause_ids": ["JGJ2022010-5.4.4"], "gold_doc": "", "source": "spoken"}
+{"qid": "s046", "question": "安全帽过期了怎么处理", "intent": "整改要求", "gold_clause_ids": ["GB28112019-5.1.2"], "gold_doc": "", "source": "spoken"}
+{"qid": "s047", "question": "脚手架立杆能不能搭接接长", "intent": "隐患判定", "gold_clause_ids": ["JGJ1302011-6.2.6"], "gold_doc": "", "source": "spoken"}
