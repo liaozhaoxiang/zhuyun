@@ -1,21 +1,48 @@
 @echo off
-chcp 65001 >nul
+chcp 936 >nul
 cd /d "%~dp0"
+title Öþ°²ÔÆ - Æô¶¯
 
-if not exist ".venv\Scripts\python.exe" (
-    echo [1/3] æœªæ‰¾åˆ°è™šæ‹ŸçŽ¯å¢ƒï¼Œæ­£åœ¨åˆ›å»º...
-    D:\Anaconda\python.exe -m venv .venv
-    echo [2/3] å®‰è£…ä¾èµ–ï¼ˆé¦–æ¬¡çº¦ 3-8 åˆ†é’Ÿï¼‰...
-    .venv\Scripts\python.exe -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+netstat -ano | findstr /r /c:":8011 .*LISTENING" >nul
+if not errorlevel 1 (
+    echo ·þÎñÒÑ¾­ÔÚÔËÐÐ£ºhttp://127.0.0.1:8011/
+    start "" "http://127.0.0.1:8011/"
+    timeout /t 3 /nobreak >nul
+    exit /b 0
 )
 
-echo [3/3] å¯åŠ¨ç­‘å®‰äº‘...
+if not exist ".venv\Scripts\python.exe" (
+    echo [1/3] Î´ÕÒµ½ÐéÄâ»·¾³£¬ÕýÔÚ´´½¨...
+    D:\Anaconda\python.exe -m venv .venv
+    echo [2/3] °²×°ÒÀÀµ£¬Ê×´ÎÔ¼ 3-8 ·ÖÖÓ...
+    ".venv\Scripts\python.exe" -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+)
+
+echo [3/3] Æô¶¯Öþ°²ÔÆ£¬ÕýÔÚµÈ¶Ë¿Ú¾ÍÐ÷...
 start "" ".venv\Scripts\pythonw.exe" main.py
-timeout /t 4 /nobreak >nul
-start "" "http://127.0.0.1:8011/"
+
+for /l %%i in (1,1,40) do (
+    netstat -ano | findstr /r /c:":8011 .*LISTENING" >nul
+    if not errorlevel 1 goto ready
+    timeout /t 1 /nobreak >nul
+)
 
 echo.
-echo æœåŠ¡å·²å¯åŠ¨ï¼šhttp://127.0.0.1:8011/
-echo é¦–æ¬¡å¯åŠ¨éœ€è¦æž„å»ºç´¢å¼•ï¼Œé¡µé¢å³ä¸Šè§’ä¼šæ˜¾ç¤ºè¿›åº¦ã€‚
-echo å…³é—­æœåŠ¡è¯·åŒå‡»ã€Œåœæ­¢ç­‘å®‰äº‘.batã€ã€‚
-timeout /t 3 /nobreak >nul
+echo Æô¶¯Ê§°Ü£ºµÈÁË 40 Ãë¶Ë¿Ú 8011 ÈÔÃ»ÆðÀ´¡£
+echo ÏÂÃæÊÇ logs\service.log µÄ×îºó 25 ÐÐ£º
+echo ------------------------------------------------------------
+if exist "logs\service.log" (
+    powershell -NoProfile -Command "Get-Content 'logs\service.log' -Tail 25"
+) else (
+    echo Ã»ÓÐÉú³ÉÈÕÖ¾ÎÄ¼þ£¬ËµÃ÷ python ½ø³Ì¸ù±¾Ã»ÅÜÆðÀ´¡£
+)
+echo ------------------------------------------------------------
+pause
+exit /b 1
+
+:ready
+start "" "http://127.0.0.1:8011/"
+echo ·þÎñÒÑÆô¶¯£ºhttp://127.0.0.1:8011/
+echo ¹Ø±Õ·þÎñÇëË«»÷¡¸Í£Ö¹Öþ°²ÔÆ.bat¡¹¡£
+timeout /t 4 /nobreak >nul
+exit /b 0

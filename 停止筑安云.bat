@@ -1,8 +1,18 @@
 @echo off
-chcp 65001 >nul
-echo æ­£åœ¨åœæ­¢ç­‘å®‰äº‘ï¼ˆç«¯å£ 8011ï¼‰...
+chcp 936 >nul
+cd /d "%~dp0"
+title Öþ°²ÔÆ - Í£Ö¹
+
+netstat -ano | findstr /r /c:":8011 .*LISTENING" >nul
+if errorlevel 1 (
+    echo ¶Ë¿Ú 8011 ÉÏÃ»ÓÐ·þÎñÔÚÅÜ£¬²»ÓÃÍ£¡£
+    timeout /t 3 /nobreak >nul
+    exit /b 0
+)
+
+echo ÕýÔÚÍ£Ö¹Öþ°²ÔÆ£¬¶Ë¿Ú 8011...
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr ":8011" ^| findstr "LISTENING"') do (
     taskkill /f /pid %%a >nul 2>&1
 )
-echo å·²åœæ­¢ã€‚
+echo ÒÑÍ£Ö¹¡£
 timeout /t 2 /nobreak >nul
